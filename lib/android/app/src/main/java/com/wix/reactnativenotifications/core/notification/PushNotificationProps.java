@@ -8,6 +8,7 @@ public class PushNotificationProps {
 
     public PushNotificationProps(Bundle bundle) {
         mBundle = bundle;
+        mBundle.putString("body", bundle.getString("alert"));
     }
 
     public String getTitle() {
